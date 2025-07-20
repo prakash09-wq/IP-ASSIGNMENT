@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Date and Time</title>
+  <style>
+    #datetime {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Show Current Date & Time</h2>
+
+  <button onclick="showDateTime()">Click Me</button>
+  <div id="datetime"></div>
+
+  <script>
+    function showDateTime() {
+      const now = new Date();
+      document.getElementById("datetime").innerText = now.toString();
+    }
+  </script>
+
+</body>
+</html>
